@@ -1,0 +1,12 @@
+@use "../utility/variables" as var; 
+@use"../utility/mixins" as mix;
+.nav{
+background-color: var.$light-gray;
+}
+.nav{
+&__container{
+    @include mix.flex(space-between,center)
+
+}
+}
+
