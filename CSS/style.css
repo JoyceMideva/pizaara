@@ -17,13 +17,34 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: "Kanit", sans-serif;
+}
+
 .nav {
   background-color: #f4f7fb;
 }
-
 .nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav ul li {
+  padding: 1em;
+  font-size: 1rem;
+}
+.nav ul li a {
+  color: #000;
+  padding: 1em;
+}
+.nav ul li a:hover {
+  background-color: #eea539;
+  color: #fff;
 }

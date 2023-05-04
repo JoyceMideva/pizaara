@@ -1,12 +1,24 @@
-@use "../utility/variables" as var; 
-@use"../utility/mixins" as mix;
-.nav{
-background-color: var.$light-gray;
-}
-.nav{
-&__container{
-    @include mix.flex(space-between,center)
+@use "../utility/variables" as var;
+@use "../utility/mixins" as mix;
+.nav {
+  background-color: var.$light-gray;
+  &__container {
+    @include mix.flex(space-between, center);
+  }
+  ul {
+    @include mix.flex(space-between, center);
+    li {
+      padding: 1em;
+      font-size: 1rem;
+      a {
+        color: var.$black;
+        padding: 1em;
 
+        &:hover {
+          background-color: var.$orange;
+          color: var.$white;
+        }
+      }
+    }
+  }
 }
-}
-
