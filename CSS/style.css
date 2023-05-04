@@ -48,3 +48,41 @@ body {
   background-color: #eea539;
   color: #fff;
 }
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+}
+.hero__container h1 {
+  font-size: 5.4rem;
+}
+.hero__container form {
+  width: 100%;
+}
+.hero__container input {
+  padding: 2em;
+  border: none;
+  outline: none;
+  width: 85%;
+}
+.hero__container button {
+  padding: 1em;
+  border-radius: 5px;
+  width: 10%;
+}
+.hero__left--orange {
+  color: #eea539;
+}
+.hero__left--search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  border: 4px solid #f4f7fb;
+}
+.hero__left, .hero__right {
+  flex: 1;
+}
