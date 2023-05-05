@@ -5,35 +5,79 @@
         @include flex(space-between,center );
 gap: 2em;
         h1{
-            font-size: 5.4rem;
+            font-size:5.5rem;
         }
         form{
             width: 100%;
+            font-size: 0;
         }
         input{
             padding: 2em;
             border: none;
             outline: none;
-            width: 85%;
+            width: 80%;
         }
         button{
-            padding: 1em;
-            border-radius: 5px;
-            width: 10%;
+            padding: 2em 0;
+            width: 20%;
+            background-color: $black;
+            color: $white;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
 
         }
-        }
-        &__left{
-            &--orange{
-            color: $orange;
-        }
-        &--search{
-            @include flex(flex-start, center);
-            border: 4px solid $light-gray;
-        }
+    }
+    &__left{
+        &--orange{
+        color: $orange;
+    }
+    &--search{
+        @include flex(flex-start, center);
+        border: 4px solid $light-gray;
+        padding-left: 1em
+    }
 
+    &__stats{
+        @include flex(space-between,center);
+        margin-top: 3em;
+    
+    }
+    &__stats{
+        &--gray{
+
+            border: 2px;
+        background-color: $light-gray;
+        padding: 1em;
+        margin-right: 5em;
+
+        div{
+            border-radius: 50%;
+            background-color: $black;
+            padding: 0.5em;
+            margin: 1.5em;
         }
-        &__left, &__right{
-            flex: 1;
+        p{
+            text-align: center;
         }
+        }
+    
+    }
+    
+    }
+
+    &__left, &__right{
+        flex: 1;
+    } 
+    &__right{
+        @include flex(space-between,center,column);
+&--large{
+padding: 2em;
 }
+&--small{
+    padding: 2em;
+}
+    }
+
+    }
