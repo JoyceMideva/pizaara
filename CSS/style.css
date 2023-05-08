@@ -21,6 +21,10 @@ body {
   font-family: "Kanit", sans-serif;
 }
 
+p {
+  text-align: center;
+}
+
 .nav {
   background-color: #f4f7fb;
 }
@@ -126,4 +130,26 @@ body {
 }
 .hero__right--small {
   padding: 2em;
+}
+
+.menu__container {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.menu ul li {
+  padding: auto;
+  margin: 3em;
+  text-align: center;
+}
+.menu h2 {
+  text-align: center;
 }

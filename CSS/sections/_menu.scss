@@ -1,0 +1,26 @@
+@use"../utility/mixins" as *;
+@use"../utility/variables" as*;
+
+.menu{
+&__container{
+background-color: aqua;
+
+@include flex(space-between,center,column);
+}
+ul{
+    @include flex(space-between,center);
+    li{
+        padding: auto;
+        margin: 3em;
+        text-align: center;
+    }
+}
+
+
+h2{
+    text-align: center;
+}
+  }
+
+
+
