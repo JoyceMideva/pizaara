@@ -56,7 +56,7 @@ body {
   flex-direction: row;
 }
 .hero__container h1 {
-  font-size: 5rem;
+  font-size: 5.5rem;
 }
 .hero__container form {
   width: 100%;
@@ -132,6 +132,10 @@ body {
 }
 .menu p {
   text-align: center;
+  color: darkgray;
+}
+.menu .orange {
+  color: #eea539;
 }
 .menu__container {
   display: flex;
@@ -170,7 +174,7 @@ body {
   background-color: #f4f7fb;
   border: 2px;
   margin-right: 2em;
-  padding: 1em;
+  padding: 0.5em;
   height: 38vh;
   margin-top: 2em;
 }
@@ -185,10 +189,12 @@ body {
   background-color: #eea539;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
-  margin-top: 5em;
+  font-weight: bolder;
   width: 15%;
+  color: #fff;
   padding: 1em;
+  margin: 2em auto;
+  display: block;
 }
 
 .testimonials__container {

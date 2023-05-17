@@ -5,6 +5,10 @@
     padding: 4em;
     p{
         text-align: center;
+        color: darkgray;
+    }
+    .orange{
+        color: $orange;
     }
 &__container{
 @include flex(space-between,center);
@@ -40,7 +44,7 @@ h3{
     background-color: $light-gray;
     border: 2px;
     margin-right: 2em;
-    padding: 1em;
+    padding: .5em;
     height: 38vh;
     margin-top: 2em;
 
@@ -56,10 +60,12 @@ h3{
     background-color: $orange;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
-    margin-top: 5em;
+    font-weight: bolder;
     width: 15%;
+    color: $white;
 padding: 1em;
+margin: 2em auto;
+display:block;
 }
 
   }
