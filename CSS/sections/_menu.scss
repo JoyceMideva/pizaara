@@ -4,7 +4,6 @@
 .menu{
     padding: 4em;
     p{
-        color: $orange;
         text-align: center;
     }
 &__container{
@@ -42,7 +41,8 @@ h3{
     border: 2px;
     margin-right: 2em;
     padding: 1em;
-    height: 40vh;
+    height: 38vh;
+    margin-top: 2em;
 
 }
 .btn-black{
@@ -50,7 +50,7 @@ h3{
     color: $white;
     font-size: 1rem;
     width: 100%;
-    padding: 2em;
+    padding: 1em;
 }
 .btn-orange{
     background-color: $orange;
@@ -59,7 +59,7 @@ h3{
     font-size: 1rem;
     margin-top: 5em;
     width: 15%;
-padding: 2em;
+padding: 1em;
 }
 
   }

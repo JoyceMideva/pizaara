@@ -8,13 +8,17 @@ padding: 3em;
     li {
       color: $white;
       padding: 1em;
+      font-size: 1rem;
     }
     h3 {
       color: $white;
+      font-weight: bold;
     }
     p {
       color: $white;
       font-size: 2rem;
+      padding: 1em;
+      font-weight: bold;
     }
     &__orange {
       color: $orange;
@@ -41,6 +45,7 @@ padding: 3em;
       border-bottom-right-radius: 5px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+      border: none;
     }
     
   }

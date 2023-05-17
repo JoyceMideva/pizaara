@@ -131,7 +131,6 @@ body {
   padding: 4em;
 }
 .menu p {
-  color: #eea539;
   text-align: center;
 }
 .menu__container {
@@ -172,14 +171,15 @@ body {
   border: 2px;
   margin-right: 2em;
   padding: 1em;
-  height: 40vh;
+  height: 38vh;
+  margin-top: 2em;
 }
 .menu .btn-black {
   background-color: #000;
   color: #fff;
   font-size: 1rem;
   width: 100%;
-  padding: 2em;
+  padding: 1em;
 }
 .menu .btn-orange {
   background-color: #eea539;
@@ -188,7 +188,7 @@ body {
   font-size: 1rem;
   margin-top: 5em;
   width: 15%;
-  padding: 2em;
+  padding: 1em;
 }
 
 .testimonials__container {
@@ -282,13 +282,17 @@ body {
 .footer__container li {
   color: #fff;
   padding: 1em;
+  font-size: 1rem;
 }
 .footer__container h3 {
   color: #fff;
+  font-weight: bold;
 }
 .footer__container p {
   color: #fff;
   font-size: 2rem;
+  padding: 1em;
+  font-weight: bold;
 }
 .footer__container__orange {
   color: #eea539;
@@ -314,4 +318,5 @@ body {
   border-bottom-right-radius: 5px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  border: none;
 }
