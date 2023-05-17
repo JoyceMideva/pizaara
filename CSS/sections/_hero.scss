@@ -3,9 +3,8 @@
 .hero{
     &__container{
         @include flex(space-between,center );
-gap: 2em;
         h1{
-            font-size:5.5rem;
+            font-size:5rem;
         }
         form{
             width: 100%;

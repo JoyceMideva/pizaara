@@ -1,0 +1,46 @@
+@use"../utility/mixins" as *;
+@use"../utility/variables" as*;
+
+.testimonials{
+    &__container{
+        @include flex(space-between,center);
+        background-color: $light-gray;
+gap: 2em;
+    }
+    &__right--orange{
+        color:$orange;
+    }
+    h4{
+        color: $orange;
+        padding: .5em 0;
+    }
+    h2{
+        font-size: 2rem;
+        padding: 0.5em 0;
+    }
+    h3{
+        font-size: 1.5rem ;
+    }
+    p{
+        font-size: 1rem;
+        padding: 0.5em;
+    }
+    
+&__right--stats{
+    background-color:$white;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    @include flex(space-between,center);
+
+    
+}
+.img{
+    background-color:$black;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 1.5em;
+    padding: .0em;
+}
+}
