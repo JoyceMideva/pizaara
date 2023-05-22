@@ -2,6 +2,7 @@
 @use "../utility/variables" as *;
 .footer {
   background-color: $black;
+  padding: 2em;
   &__container {
     @include flex(space-between, center);
 padding: 3em;
@@ -9,6 +10,13 @@ padding: 3em;
       color: $white;
       padding: 1em;
       font-size: 1rem;
+      a{
+        text-decoration: none;
+        color: $white;
+        &:hover{
+          color: $orange;
+        }
+      }
     }
     h3 {
       color: $white;
@@ -49,5 +57,8 @@ padding: 3em;
     }
     
   }
-
+&__section{
+  padding: 2em;
+  margin-top: .5em;
+}
 }

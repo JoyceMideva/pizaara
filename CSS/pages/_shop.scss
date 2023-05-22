@@ -1,0 +1,37 @@
+@use "../utility/mixins" as *;
+@use "../utility/variables" as *;
+.shop{
+     &__container{
+        @include grid(4,1);
+    }
+ul{
+    @include flex(space-between,center);  
+    border-bottom: 2px solid darkgray;
+    li{
+        @include flex(space-between,center); 
+        padding: auto;
+        margin: 1em;
+        text-align: center;
+        font-size: 1.5rem;
+        &:hover{
+            color: $orange;
+            border-bottom: 7px solid $orange;
+        }
+    }
+}
+.img{
+    background-color:$light-gray;
+    border: 2px;
+    margin-right: 2em;
+    padding: 2em;
+    margin-top: 2em;
+    text-align: center;
+}
+.btn-black{
+    background-color: $black;
+    color: $white;
+    font-size: 1rem;
+    width: 80%;
+    padding: 1em;
+}
+}
