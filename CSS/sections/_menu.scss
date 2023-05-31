@@ -11,7 +11,10 @@
         color: $orange;
     }
 &__container{
-@include flex(space-between,center);
+&>div{
+padding: 2em;
+}
+
 }
 ul{
     @include flex(space-between,center);
@@ -21,10 +24,10 @@ ul{
         margin: 1em;
         text-align: center;
         font-size: 1.5rem;
-        &:hover{
-            color: $orange;
-            border-bottom: 7px solid $orange;
-        }
+        // &:hover{
+        //     color: $orange;
+        //     border-bottom: 7px solid $orange;
+        // }
     }
 }
 h2{
@@ -63,11 +66,15 @@ h3{
     font-weight: bolder;
     width: 16%;
     color: $white;
-padding: 1em;
-margin: 5em auto;
+padding: 1.5em;
+margin: 3em auto;
 display:block;
 }
 
+  }
+  .active{
+    color: $orange;
+    border-bottom: 6px solid $orange;
   }
   
 

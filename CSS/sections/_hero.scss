@@ -71,6 +71,7 @@
     } 
     &__right{
         @include flex(space-between,center,column);
+        // margin-top: 6em;
 &--large{
 padding: 2em;
 }

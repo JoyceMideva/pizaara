@@ -21,6 +21,14 @@ body {
   font-family: "Kanit", sans-serif;
 }
 
+.pepperoni, .magherita, .hawaiian, .meatlovers {
+  display: none;
+}
+
+.chicken {
+  display: flex;
+}
+
 .nav {
   background-color: #f4f7fb;
 }
@@ -37,6 +45,7 @@ body {
   flex-direction: row;
 }
 .nav ul li {
+  position: relative;
   padding: 1em;
   font-size: 1rem;
 }
@@ -47,6 +56,40 @@ body {
 .nav ul li a:hover {
   background-color: #eea539;
   color: #fff;
+}
+.nav__right ul li:first-child:hover > span:last-child {
+  display: block;
+}
+.nav__right--counter {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-color: #eea539;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nav__box {
+  min-height: 200px;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px darkgrey;
+  position: absolute;
+  top: 80%;
+  left: -40%;
+  border-radius: 5px;
+  display: none;
+}
+.nav__box p {
+  text-align: center;
+}
+.nav__box h3 {
+  text-align: center;
 }
 
 .hero__container {
@@ -137,11 +180,8 @@ body {
 .menu .orange {
   color: #eea539;
 }
-.menu__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+.menu__container > div {
+  padding: 2em;
 }
 .menu ul {
   display: flex;
@@ -155,10 +195,6 @@ body {
   margin: 1em;
   text-align: center;
   font-size: 1.5rem;
-}
-.menu ul li:hover {
-  color: #eea539;
-  border-bottom: 7px solid #eea539;
 }
 .menu h2 {
   text-align: center;
@@ -193,9 +229,14 @@ body {
   font-weight: bolder;
   width: 16%;
   color: #fff;
-  padding: 1em;
-  margin: 5em auto;
+  padding: 1.5em;
+  margin: 3em auto;
   display: block;
+}
+
+.active {
+  color: #eea539;
+  border-bottom: 6px solid #eea539;
 }
 
 .testimonials__container {
@@ -313,6 +354,12 @@ body {
 .footer__container h3 {
   color: #fff;
   font-weight: bold;
+  padding: 2em;
+}
+.footer__container h4 {
+  color: #fff;
+  font-weight: bold;
+  padding: 1em;
 }
 .footer__container p {
   color: #fff;
@@ -350,6 +397,9 @@ body {
   padding: 2em;
   margin-top: 0.5em;
 }
+.footer__section__section--social {
+  margin-top: 2em;
+}
 
 .shop__container {
   display: grid;
@@ -372,10 +422,6 @@ body {
   margin: 1em;
   text-align: center;
   font-size: 1.5rem;
-}
-.shop ul li:hover {
-  color: #eea539;
-  border-bottom: 7px solid #eea539;
 }
 .shop .img {
   background-color: #f4f7fb;

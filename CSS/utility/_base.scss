@@ -17,3 +17,13 @@ a{
 body{
     font-family: $font;
 }
+
+// For Js
+
+.pepperoni, .magherita, .hawaiian, .meatlovers{
+    display: none;
+}
+
+.chicken{
+    display: flex;
+}

@@ -21,6 +21,12 @@ padding: 3em;
     h3 {
       color: $white;
       font-weight: bold;
+      padding: 2em;
+    }
+    h4 {
+      color: $white;
+      font-weight: bold;
+      padding: 1em;
     }
     p {
       color: $white;
@@ -60,5 +66,9 @@ padding: 3em;
 &__section{
   padding: 2em;
   margin-top: .5em;
+&__section--social{
+  margin-top: 2em;
 }
+}
+
 }

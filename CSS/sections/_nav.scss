@@ -1,24 +1,70 @@
-@use "../utility/variables" as var;
+@use "../utility/variables" as *;
 @use "../utility/mixins" as mix;
 .nav {
-  background-color: var.$light-gray;
+  // position: relative;
+  background-color:$light-gray;
   &__container {
     @include mix.flex(space-between, center);
   }
   ul {
     @include mix.flex(space-between, center);
     li {
+      position: relative;
       padding: 1em;
       font-size: 1rem;
+      
       a {
-        color: var.$black;
+        color:$black;
         padding: 1em;
 
         &:hover {
-          background-color: var.$orange;
-          color: var.$white;
+          background-color: $orange;
+          color:$white;
         }
       }
     }
   }
+
+  &__right{
+    ul{
+      li:first-child:hover{
+       &>span:last-child{
+        display: block;
+       }
+      }
+    }
+    
+    &--counter{
+      display: block;
+      height: 30px;
+      width: 30px;
+    background-color:$orange;
+    @include mix.flex(center, center);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    
+  }
+
+  &__box{
+    min-height: 200px;
+    width: 400px;
+    background-color:$white;
+    box-shadow: 1px 1px 5px darkgrey ;
+    position: absolute;
+    top: 80%;
+    left: -40%;
+    border-radius: 5px;
+    display: none;
+
+    p{
+      text-align: center;
+    }
+    h3{
+      text-align: center;
+    }
+        }
+
 }

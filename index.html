@@ -37,13 +37,20 @@
               </ul>
             </div>
             <div class="nav__right">
+              
               <ul>
                 <li>
+                  
+                  <span  id="counter" class="nav__right--counter">0</span>
                   <img
                     width="40"
                     src="images/shopping-cart.png"
                     alt="shopping-cart"
                   />
+                  <span class="nav__box" id="cart-preview">
+                    <h3>Cart</h3>
+                    <p>Cart is empty</p>
+                  </span>
                 </li>
                 <li>
                   <img width="40" src="images/avatar.png" alt="user profile" />
@@ -53,6 +60,7 @@
             </div>
           </div>
         </div>
+
       </nav>
       <section class="hero">
         <div class="container">
@@ -135,47 +143,198 @@
             <h2><span class="menu__orange"> Special Menu </span> For You</h2>
           </div>
           <div>
-            <ul>
-              <li>Chicken pizza</li>
-              <li><strong>Pepporino</strong></li>
-              <li><strong>Margherita</strong></li>
-              <li><strong>Hawaiin</strong></li>
-              <li><strong>Meat lover's pizza</strong></li>
+            <ul >
+              <li class="select">Chicken pizza</li>
+              <li class="select">pepperoni</li>
+              <li class="select">Margherita</li>
+              <li class="select">Hawaiin</li>
+              <li class="select">Meat lover's pizza</li>
             </ul>
           </div>
           <div class="menu__container">
-            <div class="img">
-              <img
-                width="200"
-                src="images/barbecue-chicken-pizza.png"
-                alt=" chicken-pizza"
-              />
-              <h3>BBQ chicken-pizza</h3>
-              <p>(cheese with shrimp)</p>
-              <h3>Ksh.1500</h3>
-              <button class="btn-black">Add to cart</button>
+            <!-- Chicken Pizza -->
+            <div class="menu__item chicken">
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/barbecue-chicken-pizza.png"
+                  alt=" chicken-pizza"
+                />
+                <h3>BBQ chicken-pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/tandoori-chicken.png"
+                  alt=" tandoori pizza"
+                />
+                <h3>Tandoori chicken pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/chicken-kebab.png"
+                  alt=" kebab-pizza"
+                />
+                <h3>chicken kebab pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
             </div>
-            <div class="img">
-              <img
-                width="200"
-                src="images/tandoori-chicken.png"
-                alt=" tandoori pizza"
-              />
-              <h3>Tandoori chicken pizza</h3>
-              <p>(cheese with shrimp)</p>
-              <h3>Ksh.1500</h3>
-              <button class="btn-black">Add to cart</button>
+
+            <!-- Pepperoni Pizza -->
+            <div class="menu__item pepperoni">
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/barbecue-chicken-pizza.png"
+                  alt=" chicken-pizza"
+                />
+                <h3>BBQ pepperoni-pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/tandoori-chicken.png"
+                  alt=" tandoori pizza"
+                />
+                <h3>Tandoori pepperoni pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/chicken-kebab.png"
+                  alt=" kebab-pizza"
+                />
+                <h3>pepperoni kebab pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
             </div>
-            <div class="img">
-              <img
-                width="200"
-                src="images/chicken-kebab.png"
-                alt=" kebab-pizza"
-              />
-              <h3>chicken kebab pizza</h3>
-              <p>(cheese with shrimp)</p>
-              <h3>Ksh.1500</h3>
-              <button class="btn-black">Add to cart</button>
+
+            <!-- Magherita Pizza -->
+            <div class="menu__item magherita">
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/barbecue-chicken-pizza.png"
+                  alt=" chicken-pizza"
+                />
+                <h3>BBQ magherita-pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/tandoori-chicken.png"
+                  alt=" tandoori pizza"
+                />
+                <h3>Tandoori magherita pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/chicken-kebab.png"
+                  alt=" kebab-pizza"
+                />
+                <h3>magherita kebab pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+            </div>
+
+            <!-- Hawaiian Pizza -->
+            <div class="menu__item hawaiian">
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/barbecue-chicken-pizza.png"
+                  alt=" chicken-pizza"
+                />
+                <h3>BBQ Hawaiian-pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/tandoori-chicken.png"
+                  alt=" tandoori pizza"
+                />
+                <h3>Tandoori Hawaiian pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/chicken-kebab.png"
+                  alt=" kebab-pizza"
+                />
+                <h3>Hawaiian kebab pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+            </div>
+
+            <!-- Meat Lovers Pizza -->
+            <div class="menu__item meatlovers">
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/barbecue-chicken-pizza.png"
+                  alt=" chicken-pizza"
+                />
+                <h3>BBQ Meat Lovers-pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/tandoori-chicken.png"
+                  alt=" tandoori pizza"
+                />
+                <h3>Tandoori Meat Lovers pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
+              <div class="img">
+                <img
+                  width="200"
+                  src="images/chicken-kebab.png"
+                  alt=" kebab-pizza"
+                />
+                <h3>Meat Lovers kebab pizza</h3>
+                <p>(cheese with shrimp)</p>
+                <h3 data-price="1500">Ksh.1500</h3>
+                <button class="btn-black add-to-cart">Add to cart</button>
+              </div>
             </div>
           </div>
           <div><button class="btn-orange">View More</button></div>
@@ -195,50 +354,52 @@
                   Why We Are
                   <span class="testimonials__right--orange">The Best </span>
                 </h2>
-                <p class="testimonial__black">We try to maintain our food quality for our customers.</p>
+                <p class="testimonial__black">
+                  We try to maintain our food quality for our customers.
+                </p>
                 <p>Our customers' satisfaction is our top priority.</p>
               </div>
               <div class="testimonials__stats">
-              <div class="testimonials__right--stats">
-                <div class="img">
-                  <img width="50" src="images/fresh-pizza.png" alt="fresh" />
+                <div class="testimonials__right--stats">
+                  <div class="img">
+                    <img width="50" src="images/fresh-pizza.png" alt="fresh" />
+                  </div>
+                  <div>
+                    <h3><strong>Fresh Pizza</strong></h3>
+                    <p>
+                      We make our pizza to suit your needs as we use the quality
+                      ingredients
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3><strong>Fresh Pizza</strong></h3>
-                  <p>
-                    We make our pizza to suit your needs as we use the quality
-                    ingredients
-                  </p>
+                <div class="testimonials__right--stats">
+                  <div class="img">
+                    <img
+                      width="50"
+                      src="images/fast-delivery.png"
+                      alt="fast-delivery"
+                    />
+                  </div>
+                  <div>
+                    <h3><strong>Fast delivery</strong></h3>
+                    <p>
+                      Through rapid delivery we provide a high level of customer
+                      service
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="testimonials__right--stats">
-                <div class="img">
-                  <img
-                    width="50"
-                    src="images/fast-delivery.png"
-                    alt="fast-delivery"
-                  />
+                <div class="testimonials__right--stats">
+                  <div class="img">
+                    <img width="50" src="images/quality.png" alt="quality" />
+                  </div>
+                  <div>
+                    <h3><strong>Best Quality</strong></h3>
+                    <p>
+                      Our delivery service that is available at any time and
+                      usually everyday
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3><strong>Fast delivery</strong></h3>
-                  <p>
-                    Through rapid delivery we provide a high level of customer
-                    service
-                  </p>
-                </div>
-              </div>
-              <div class="testimonials__right--stats">
-                <div class="img">
-                  <img width="50" src="images/quality.png" alt="quality" />
-                </div>
-                <div>
-                  <h3><strong>Best Quality</strong></h3>
-                  <p>
-                    Our delivery service that is available at any time and
-                    usually everyday
-                  </p>
-                </div>
-              </div>
               </div>
             </div>
           </div>
@@ -263,17 +424,25 @@
 
             <div class="img">
               <img
-              class="images"
+                class="images"
                 width="50"
                 src="images/live-support.png"
                 alt="support live"
               />
               <h3>Live Support</h3>
-              <p>Get live support now <i class="fa-solid fa-arrow-right-long"></i></p>
+              <p>
+                Get live support now
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </p>
             </div>
 
             <div class="img">
-              <img class="images" width="50" src="images/phone.png" alt="phone call" />
+              <img
+                class="images"
+                width="50"
+                src="images/phone.png"
+                alt="phone call"
+              />
               <h3>Phone Number</h3>
               <p>+254711555888</p>
             </div>
@@ -291,7 +460,7 @@
             <div class="footer__section">
               <div><img src="images/logo_light.svg" alt="logo" /></div>
               <h3><strong>Stay Connected</strong></h3>
-              <div>
+              <div class="footer__section--socials">
                 <img width="50" src="images/facebook.png" alt="facebook" />
                 <img width="50" src="images/instagram.png" alt="instagram" />
                 <img width="50" src="images/twitter.png" alt="twitter" />
@@ -299,12 +468,12 @@
               </div>
             </div>
             <div class="footer__section">
-              <h3>Quick Links</h3>
-              <ul>
+              <h4>Quick Links</h4>
+              <ul >
                 <li><a href="./index.html">Home</a></li>
-                <li> <a href="#">About Us</a></li>
-                <li> <a href="./shop.html">Shop</a></li>
-                <li> <a href="./contact.html">Contact us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
               </ul>
             </div>
             <div class="footer__section">
@@ -321,5 +490,10 @@
       </section>
     </footer>
     <!-- footer ends here -->
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>
+
+
+<input type="text">
